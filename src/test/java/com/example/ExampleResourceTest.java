@@ -33,7 +33,7 @@ class ExampleResourceTest {
     }
 
     @Test
-    void testPreMatchingFilter_withAcceptHeaderTextPlain_returnTextPlain() {
+    void testPreMatchingFilter_withAcceptHeaderTextHtml_returnTextPlain() {
         given()
                 .when().header("Accept", "text/html")
                 .get("/hello")
